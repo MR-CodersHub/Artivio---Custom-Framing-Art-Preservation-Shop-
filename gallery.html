@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Artivio Custom Picture Framing & Art Preservation</title>
+  <meta name="description" content="Explore our completed custom framing portfolio, contemporary art floaters, gilded heritage frames, and conservation projects with functional filters and lightbox.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <script>
+    (function () {
+      var t = localStorage.getItem('artivio_theme') || localStorage.getItem('lartisan_theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var d = localStorage.getItem('artivio_direction') || localStorage.getItem('lartisan_direction');
+      if (d === 'rtl') document.documentElement.setAttribute('dir', 'rtl');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Studio Notice">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>📍 482 Heritage Arts Way, Suite 100</span>
+        <span>🕒 Tue–Sat: 10:00 AM – 6:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <span>📞 <a href="tel:+18005553726">(800) 555-FRAM</a></span>
+        <span class="top-bar-gold">✦ All Works Handcrafted in our Artisan Studio</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-tool-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme (Dark / Light)">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="header-tool-btn rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle Text Direction" title="Toggle Direction (RTL / LTR)">
+            <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M16 4l4 4-4 4"></path>
+              <path d="M20 16H4M8 12l-4 4 4 4"></path>
+            </svg>
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <a href="contact.html#quote-form" class="btn btn-primary btn-sm header-quote-btn" id="headerQuoteBtn">Request a Quote</a>
+          <button class="header-tool-btn mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="38" height="38">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+        <button class="drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="drawer-tools">
+        <button class="drawer-tool-btn theme-toggle-btn-mobile" type="button">
+          <span class="theme-label-mobile">🌙 Dark Mode</span>
+        </button>
+        <button class="drawer-tool-btn rtl-toggle-btn-mobile" type="button">
+          <span class="rtl-label-mobile">🌐 Switch to RTL</span>
+        </button>
+      </div>
+
+      <ul class="drawer-nav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="drawer-footer">
+      <a href="contact.html#quote-form" class="btn btn-primary" style="width: 100%;">Request a Quote</a>
+      <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--charcoal-muted); text-align: center;">
+        Direct Inquiries: (800) 555-FRAM
+      </p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- SECTION 1: GALLERY HERO & CURATED PORTFOLIO INTRODUCTION -->
+    <section class="hero section-bg-cream" id="galleryHero">
+      <div class="container">
+        <div class="section-header" style="max-width: 820px; margin-bottom: 2rem;">
+          <span class="section-eyebrow">Curated Archive</span>
+          <h1 class="section-title">The Art of the Frame: Completed Projects</h1>
+          <p class="section-desc">
+            Explore a curated gallery of our recent commissions. Click on any work to open the high-resolution lightbox, inspect framing joinery, and review archival preservation specifications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: COMPLETED FRAMING PROJECTS WITH JAVASCRIPT CATEGORY FILTERS & LIGHTBOX -->
+    <section class="section section-bg-ivory" id="portfolioGallery">
+      <div class="container">
+        <!-- Functional Category Filters -->
+        <div class="gallery-filters" role="group" aria-label="Gallery category filters">
+          <button class="filter-btn active" data-filter="all">All Projects (9)</button>
+          <button class="filter-btn" data-filter="fine-art">Fine Art Originals</button>
+          <button class="filter-btn" data-filter="canvas">Canvas Floaters</button>
+          <button class="filter-btn" data-filter="photography">Photography</button>
+          <button class="filter-btn" data-filter="memorabilia">Memorabilia & Objects</button>
+          <button class="filter-btn" data-filter="conservation">Historical Conservation</button>
+        </div>
+
+        <!-- Filterable Grid -->
+        <div class="gallery-grid" id="mainGalleryGrid">
+          <!-- Item 1: Fine Art -->
+          <div class="gallery-item" data-category="fine-art">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/service_fine_art.jpg" alt="Portrait of the Contessa classical oil painting in 22k water-gilded frame" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Fine Art</span>
+                  <h4>Portrait of the Contessa (Oil on Panel)</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Portrait of the Contessa</strong>
+                <span class="gallery-specs" style="display: block;">22k Water-Gilded Bole • Tru Vue Glass</span>
+              </div>
+              <span class="badge-gold">Museum</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Canvas Floater -->
+          <div class="gallery-item" data-category="canvas">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/service_canvas_floater.jpg" alt="Chromatic Symphony modern canvas artwork in solid black walnut floater frame" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Canvas</span>
+                  <h4>Chromatic Symphony (48" × 60")</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Chromatic Symphony</strong>
+                <span class="gallery-specs" style="display: block;">2.5" Solid Black Walnut Floater Frame</span>
+              </div>
+              <span class="badge-terracotta">Floater</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Photography -->
+          <div class="gallery-item" data-category="photography">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/framed_bw_photo.jpg" alt="Geometric Shadows silver gelatin landscape photograph in 8-ply rag mat" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Photography</span>
+                  <h4>Alpine Horizon (Gelatin Silver)</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Alpine Horizon</strong>
+                <span class="gallery-specs" style="display: block;">8-Ply Rag Mat • Tru Vue OptiView</span>
+              </div>
+              <span class="badge-ivory">Monochrome</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Conservation -->
+          <div class="gallery-item" data-category="conservation">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/gallery_botanical_print.jpg" alt="18th century botanical copperplate engraving in French ruled mat and museum glass" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Conservation</span>
+                  <h4>Flora Botanica Copperplate (1784)</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Flora Botanica Copperplate</strong>
+                <span class="gallery-specs" style="display: block;">French Mat Lines • Micro-Chamber Back</span>
+              </div>
+              <span class="badge-gold">Archival</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Memorabilia -->
+          <div class="gallery-item" data-category="memorabilia">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/service_shadowbox.jpg" alt="Antique brass pocket watch mechanism and medals mounted in deep shadowbox" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Memorabilia</span>
+                  <h4>Vintage Horology &amp; Family Medals</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Vintage Horology Shadowbox</strong>
+                <span class="gallery-specs" style="display: block;">Hand-Stitched Belgian Linen • 3.5" Depth</span>
+              </div>
+              <span class="badge-terracotta">Shadowbox</span>
+            </div>
+          </div>
+
+          <!-- Item 6: Fine Art -->
+          <div class="gallery-item" data-category="fine-art">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/gilded_ornate_frame.jpg" alt="Venetian canal landscape oil painting in hand-carved baroque gilded frame" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Fine Art</span>
+                  <h4>Venetian Canal at Twilight (Oil)</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Venetian Canal at Twilight</strong>
+                <span class="gallery-specs" style="display: block;">Hand-Carved Baroque Corner Embellishments</span>
+              </div>
+              <span class="badge-gold">Gilded</span>
+            </div>
+          </div>
+
+          <!-- Item 7: Canvas Floater -->
+          <div class="gallery-item" data-category="canvas">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/moulding_woodcraft_detail.jpg" alt="Handcrafted picture frame chevron corners and mouldings on workshop bench" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Craftsmanship</span>
+                  <h4>Artisan Moulding Chevrons</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Artisan Moulding Chevrons</strong>
+                <span class="gallery-specs" style="display: block;">American Walnut &amp; White Oak</span>
+              </div>
+              <span class="badge-ivory">Hardwoods</span>
+            </div>
+          </div>
+
+          <!-- Item 8: Photography -->
+          <div class="gallery-item" data-category="photography">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/modern_gallery_frame.jpg" alt="Highland Mist panorama fine art print in minimalist rift-sawn maple frame with 4-ply museum mat" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Photography</span>
+                  <h4>Highland Mist Panorama</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Highland Mist Panorama</strong>
+                <span class="gallery-specs" style="display: block;">Rift-Sawn Maple • 4-Ply Museum Rag Mat</span>
+              </div>
+              <span class="badge-ivory">Minimalist</span>
+            </div>
+          </div>
+
+          <!-- Item 9: Conservation -->
+          <div class="gallery-item" data-category="conservation">
+            <div class="gallery-img-wrap">
+              <img src="assets/images/gallery_vintage_map.jpg" alt="Historical 17th century cartography map preserved with archival encapsulation" class="gallery-img">
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span>Conservation</span>
+                  <h4>Cartography of the New World (1675)</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item-info">
+              <div>
+                <strong style="color: var(--charcoal-black); font-size: 0.95rem;">Cartography of the New World</strong>
+                <span class="gallery-specs" style="display: block;">Mylar Encapsulation • French Ruled Mat</span>
+              </div>
+              <span class="badge-gold">Antique Map</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONTEMPORARY ARTWORK FRAMING SPOTLIGHT -->
+    <section class="section" id="contemporarySpotlight">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Modern Aesthetics</span>
+          <h2 class="section-title">Contemporary Framing &amp; Modern Profiles</h2>
+          <p class="section-desc">
+            Clean architectural lines designed to integrate seamlessly into modern residential interiors, corporate headquarters, and contemporary white-cube galleries.
+          </p>
+        </header>
+
+        <div class="grid-2">
+          <div>
+            <div class="artisan-frame">
+              <img src="assets/images/modern_gallery_frame.jpg" alt="Minimalist hard maple picture frame with 4-ply museum mat displaying fine art on gallery wall" style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+          </div>
+          <div>
+            <h3 style="margin-bottom: 1rem;">Subtle Restraint &amp; Precision Shadowlines</h3>
+            <p style="margin-bottom: 1.25rem;">
+              Contemporary art demands frames that do not compete with vibrant palettes or oversized compositions. We specialize in narrow 1/2" hardwood profiles with deep 2" side reveals that give substantial structural depth without visual clutter.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem;">
+              <li style="display: flex; gap: 0.75rem; align-items: center;">
+                <span style="color: var(--burnt-orange);">✔</span>
+                <span><strong>Rift-Sawn Hard Maple:</strong> Minimalist blonde timber with subtle linear grain and satin wax finish.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: center;">
+                <span style="color: var(--burnt-orange);">✔</span>
+                <span><strong>Seamless Corner Splines:</strong> Precision internal joinery with zero visible mechanical fasteners.</span>
+              </li>
+              <li style="display: flex; gap: 0.75rem; align-items: center;">
+                <span style="color: var(--burnt-orange);">✔</span>
+                <span><strong>Full-Bleed Spacers:</strong> Invisible museum spacers that elevate the glazing 1/4" above the un-matted print edge.</span>
+              </li>
+            </ul>
+            <a href="contact.html#quote-form" class="btn btn-primary">Enquire About Modern Framing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TRADITIONAL & ORNATE GILDED FRAMES COLLECTION (REDESIGNED) -->
+    <section class="section section-bg-ivory" id="traditionalSpotlight">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Classical Elegance</span>
+          <h2 class="section-title">Traditional &amp; Ornate Heritage Frames</h2>
+          <p class="section-desc">
+            Centuries of European artistic heritage reflected in hand-laid gold leaf, rich compo ornamentation, and hand-rubbed patinas.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <div class="profile-spec-card">
+            <div class="profile-card-header">
+              <div class="profile-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>
+              </div>
+              <span class="badge-gold">15th–16th Century</span>
+            </div>
+            <h3>Cassetta Profiles</h3>
+            <p>Wide flat friezes bounded by raised inner and outer astragal moldings. Ideal for classical oil portraits, landscapes, and Old Master drawings.</p>
+            <div class="profile-finishes-chip">
+              Finishes: <strong>Antiqued Walnut, Ebonized Pearwood, 22k Bole</strong>
+            </div>
+            <div class="profile-specs-pill">
+              <span>✦</span> Profile: 3.5″ Depth • Sight Edge Bead • Hand-Planed
+            </div>
+          </div>
+
+          <div class="profile-spec-card">
+            <div class="profile-card-header">
+              <div class="profile-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/></svg>
+              </div>
+              <span class="badge-terracotta">17th–18th Century</span>
+            </div>
+            <h3>Louis XIV &amp; XV Swept Frames</h3>
+            <p>Elaborate pierced acanthus leaf corners and center cartouches carved from seasoned wood and burnished with 22k genuine European gold leaf.</p>
+            <div class="profile-finishes-chip">
+              Finishes: <strong>22k Water-Gilt, Armenian Red Bole, Burnished Agate</strong>
+            </div>
+            <div class="profile-specs-pill">
+              <span>✦</span> Profile: 4.25″ Depth • Pierced Cartouche • Rabbit-Skin Glue
+            </div>
+          </div>
+
+          <div class="profile-spec-card">
+            <div class="profile-card-header">
+              <div class="profile-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="badge-ivory">19th Century</span>
+            </div>
+            <h3>Fluted Scoop Mouldings</h3>
+            <p>Deep cove profiles with beaded inner sight edges, providing extraordinary optical depth that draws the viewer’s eye inward into the painting.</p>
+            <div class="profile-finishes-chip">
+              Finishes: <strong>Burnished Bronze, Florentine Gilded Silver, Matte Gilt</strong>
+            </div>
+            <div class="profile-specs-pill">
+              <span>✦</span> Profile: 2.75″ Depth • Beaded Astragal • Ogee Hollow
+            </div>
+          </div>
+        </div>
+
+        <!-- Heritage Atelier Craftsmanship Banner -->
+        <div class="heritage-atelier-banner">
+          <div class="heritage-atelier-info">
+            <div class="heritage-atelier-icon">⚜️</div>
+            <div class="heritage-atelier-text">
+              <h4>The 5 Hallmarks of Our Heritage Atelier</h4>
+              <p>100% Solid Seasoned Hardwoods • Hand-Applied Rabbit Skin Gesso • Genuine 22k Water-Gilding • Agate Burnishing • Reversible Conservation</p>
+            </div>
+          </div>
+          <a href="services.html#restoration" class="btn btn-outline btn-sm">Explore Heritage Restoration</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CANVAS FRAMING & FLOATER PROFILES SHOWCASE (REDESIGNED) -->
+    <section class="section" id="canvasShowcase">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Suspended Canvases</span>
+          <h2 class="section-title">The Engineering Behind Floater Frames</h2>
+          <p class="section-desc">
+            How our custom floater frame engineering cradles gallery-wrapped canvases without putting stress on delicate stretcher joints.
+          </p>
+        </header>
+
+        <div class="floater-engineering-wrap">
+          <div class="floater-content-col">
+            <h3 style="font-size: 1.45rem; margin-bottom: 0.75rem;">Why Gallery Floaters Are Essential</h3>
+            <p style="font-size: 0.95rem; line-height: 1.62; color: var(--charcoal-soft); margin-bottom: 1.25rem;">
+              Traditional lip-style frames conceal up to 1/2" of the painting along all four edges—often hiding artist signatures and brush details. Our floater frames anchor to the back of the stretcher frame with brass stepped brackets, giving the canvas 100% border visibility.
+            </p>
+
+            <div class="floater-specs-grid">
+              <div class="floater-spec-box">
+                <span class="floater-metric">0 mm</span>
+                <div class="floater-spec-body">
+                  <div class="floater-spec-title">Face Contact</div>
+                  <p class="floater-spec-desc">Zero clamping pressure on delicate impasto and acrylic edges.</p>
+                </div>
+              </div>
+
+              <div class="floater-spec-box">
+                <span class="floater-metric">1/4″</span>
+                <div class="floater-spec-body">
+                  <div class="floater-spec-title">Shadowline Reveal</div>
+                  <p class="floater-spec-desc">Calibrated air gap creating the illusion of weightless suspension.</p>
+                </div>
+              </div>
+
+              <div class="floater-spec-box">
+                <span class="floater-metric">100%</span>
+                <div class="floater-spec-body">
+                  <div class="floater-spec-title">Edge Visibility</div>
+                  <p class="floater-spec-desc">Artist signatures, wrapped canvas edges, and dates remain visible.</p>
+                </div>
+              </div>
+
+              <div class="floater-spec-box">
+                <span class="floater-metric">3.0″</span>
+                <div class="floater-spec-body">
+                  <div class="floater-spec-title">Custom Depth</div>
+                  <p class="floater-spec-desc">Solid American Walnut cradling tailored for heavy gallery stretchers.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="floater-actions">
+              <a href="services.html#canvas" class="btn btn-primary">Explore Canvas Floaters</a>
+              <a href="contact.html#quote-form" class="btn btn-outline">Order Custom Floater</a>
+            </div>
+          </div>
+
+          <div class="floater-frame-showcase">
+            <div class="artisan-frame">
+              <img src="assets/images/service_canvas_floater.jpg" alt="Fine art canvas suspended inside handcrafted custom floater frame with 1/4 inch reveal on gallery wall">
+              <div class="floater-callout-tag top-tag">
+                <span class="floater-callout-dot"></span>
+                <span>1/4″ Shadowline Floating Reveal</span>
+              </div>
+              <div class="floater-callout-tag bottom-tag">
+                <span class="floater-callout-dot"></span>
+                <span>Solid American Walnut Profile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PHOTOGRAPHY, MEMORABILIA & CONSERVATION SPOTLIGHT WITH CTA -->
+    <section class="section section-bg-ivory" id="memorabiliaSpotlight">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="section-eyebrow">Private Commission</span>
+          <h2>Have an Original Artwork or Heirloom to Frame?</h2>
+          <p>
+            Bring your piece to our studio or submit high-resolution photographs through our quote tool for a complimentary framing curation and archival estimate.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html#quote-form" class="btn btn-primary btn-lg" id="galleryQuoteBtn">Request a Framing Quote</a>
+            <a href="contact.html#appointment" class="btn btn-secondary btn-lg" id="galleryBookBtn">Book Consultation</a>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--charcoal-muted); margin-top: 1.5rem;">
+            FATG Commended Framers • 100% Reversible Museum Techniques
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL CONTAINER (DRIVEN BY JS/GALLERY.JS) -->
+  <div class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image gallery lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous artwork">‹</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Next artwork">›</button>
+
+    <div class="lightbox-content">
+      <div class="lightbox-img-box">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-details">
+        <div>
+          <h3 class="lightbox-title" style="margin-bottom: 0.25rem;">Artwork Title</h3>
+          <p class="lightbox-specs" style="font-size: 0.88rem; color: var(--charcoal-muted);">Framing Specifications</p>
+        </div>
+        <div>
+          <a href="contact.html#quote-form" class="btn btn-primary btn-sm">Request Similar Frame</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consistent Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Artivio Home" style="margin-bottom: 1rem;">
+            <div class="logo-icon">
+              <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+            </div>
+            <div class="brand-name">
+              <span class="brand-title" style="color: #fff;">ARTIVIO</span>
+            </div>
+          </a>
+          <p>
+            Dedicated to the heritage craft of bespoke picture framing and museum conservation since 1994. Every piece is handled with archival reversibility and master joinery.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-icon" aria-label="Instagram">📸</a>
+            <a href="https://pinterest.com" class="social-icon" aria-label="Pinterest">📌</a>
+            <a href="https://facebook.com" class="social-icon" aria-label="Facebook">📘</a>
+            <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Studio Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Artisan Showcase)</a></li>
+            <li><a href="about.html">About Us & Heritage</a></li>
+            <li><a href="services.html">Framing & Conservation</a></li>
+            <li><a href="gallery.html">Portfolio & Lightbox</a></li>
+            <li><a href="blog.html">Care & Framing Journal</a></li>
+            <li><a href="contact.html">Contact Us & Quote Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Framing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-framing">Custom Picture Framing</a></li>
+            <li><a href="services.html#conservation">Museum Archival Glass (UV 99%)</a></li>
+            <li><a href="services.html#canvas">Canvas Stretcher & Floaters</a></li>
+            <li><a href="services.html#shadowboxes">Memorabilia Shadowboxes</a></li>
+            <li><a href="services.html#restoration">Gilded Frame Restoration</a></li>
+            <li><a href="services.html#materials">Hardwoods & Archival Mats</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Studio Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <span>482 Heritage Arts Way, Suite 100, Artisan District</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📞</span>
+              <span>(800) 555-FRAM / (800) 555-3726</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">✉️</span>
+              <span>curator@artivioframing.com</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <div class="footer-hours-row">
+              <span>Tuesday – Friday</span>
+              <span>10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Saturday</span>
+              <span>10:00 AM – 5:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Sunday – Monday</span>
+              <span>Closed (Private Appt Only)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> Artivio Custom Framing & Art Preservation Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+          <a href="about.html">Privacy & Ethics Policy</a>
+          <a href="services.html">Conservation Guarantee</a>
+          <a href="404.html">404 Page</a>
+          <a href="maintenance.html">Maintenance</a>
+          <a href="coming-soon.html">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

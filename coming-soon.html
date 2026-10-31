@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | Artivio 2026 Bespoke Framing Collection</title>
+  <meta name="description"
+    content="Preview the upcoming 2026 Artivio Custom Picture Framing collection and 3D Virtual Studio Visualizer. Sign up for exclusive VIP preview access.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <script>
+    (function () {
+      var t = localStorage.getItem('artivio_theme') || localStorage.getItem('lartisan_theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var d = localStorage.getItem('artivio_direction') || localStorage.getItem('lartisan_direction');
+      if (d === 'rtl') document.documentElement.setAttribute('dir', 'rtl');
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Studio Notice">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>📍 482 Heritage Arts Way, Suite 100</span>
+        <span>🕒 Tue–Sat: 10:00 AM – 6:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <span>📞 <a href="tel:+18005553726">(800) 555-FRAM</a></span>
+        <span class="top-bar-gold">✦ VIP Early Access Reservations Now Open</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-tool-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode"
+            title="Toggle Theme (Dark / Light)">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="header-tool-btn rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle Text Direction"
+            title="Toggle Direction (RTL / LTR)">
+            <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M16 4l4 4-4 4"></path>
+              <path d="M20 16H4M8 12l-4 4 4 4"></path>
+            </svg>
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <a href="#vipSignup" class="btn btn-primary btn-sm header-quote-btn" id="headerQuoteBtn">Claim VIP Access</a>
+          <button class="header-tool-btn mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="mobileDrawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="38" height="38">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+        <button class="drawer-close" aria-label="Close navigation menu">✕</button>
+      </div>
+
+      <div class="drawer-tools">
+        <button class="drawer-tool-btn drawer-theme-toggle" id="drawerThemeToggle">
+          <span class="drawer-tool-icon">🌙</span>
+          <span class="drawer-tool-label">Dark Theme</span>
+        </button>
+        <button class="drawer-tool-btn drawer-rtl-toggle" id="drawerRtlToggle">
+          <span class="drawer-tool-icon">🌐</span>
+          <span class="drawer-tool-label">RTL Layout</span>
+        </button>
+      </div>
+
+      <ul class="drawer-menu">
+        <li><a href="index.html" class="drawer-link">Home</a></li>
+        <li><a href="home-2.html" class="drawer-link">Home 2</a></li>
+        <li><a href="about.html" class="drawer-link">About Us</a></li>
+        <li><a href="services.html" class="drawer-link">Services</a></li>
+        <li><a href="gallery.html" class="drawer-link">Gallery</a></li>
+        <li><a href="blog.html" class="drawer-link">Blog</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact Us</a></li>
+      </ul>
+
+      <div class="drawer-cta">
+        <a href="#vipSignup" class="btn btn-primary" style="width: 100%; justify-content: center;">Get VIP
+          Invitation</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Coming Soon Main Section -->
+  <main class="status-page-main" id="mainContent">
+    <div class="container status-container" style="text-align: center;">
+
+      <!-- Live Status Pill Badge -->
+      <div>
+        <div class="status-pill-badge">
+          <span class="status-dot-pulse dot-gold"></span>
+          <span>✦ Unveiling Spring 2026 • Exclusive Atelier Launch ✦</span>
+        </div>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 style="font-size: clamp(2.1rem, 4.2vw, 3.4rem); line-height: 1.15; max-width: 820px; margin: 0 auto 1.15rem;">
+        Something Masterful is Taking Shape in Our Framing Atelier
+      </h1>
+
+      <p
+        style="max-width: 680px; margin: 0 auto 2.5rem; font-size: 1.12rem; color: var(--charcoal-soft); line-height: 1.65;">
+        We are crafting the next generation of bespoke picture framing. Experience precision 3D augmented visualization,
+        newly sourced old-growth hardwoods, and museum-grade diamond coatings.
+      </p>
+
+      <!-- Live Interactive Countdown Timer -->
+      <div class="countdown-grid" id="countdownGrid" aria-label="Countdown timer to release date">
+        <div class="countdown-tile">
+          <span class="countdown-num" id="countdownDays">28</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-tile">
+          <span class="countdown-num" id="countdownHours">14</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-tile">
+          <span class="countdown-num" id="countdownMinutes">42</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-tile">
+          <span class="countdown-num" id="countdownSeconds">18</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <!-- VIP Early Access Signup Form -->
+      <div style="max-width: 580px; margin: 2.5rem auto 3.5rem;" id="vipSignup">
+        <div class="status-nav-card" style="padding: 2.2rem 1.8rem; text-align: center; align-items: center;">
+          <span style="font-size: 2rem; margin-bottom: 0.5rem;">🎟️</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.45rem;">Join the Private Atelier VIP Preview</h3>
+          <p style="font-size: 0.92rem; color: var(--charcoal-soft); margin-bottom: 1.4rem;">
+            Receive exclusive early access 48 hours before public launch, plus an archival <strong>$50 studio framing
+              credit</strong> on your inaugural order.
+          </p>
+
+          <form class="status-notify-form" id="vipSignupForm" onsubmit="event.preventDefault(); handleVipSubmit();"
+            style="width: 100%;">
+            <input type="email" class="status-notify-input" id="vipEmail"
+              placeholder="Enter your email for private invitation..." required
+              aria-label="Email address for VIP early access">
+            <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+              <span>Claim VIP Access</span>
+            </button>
+          </form>
+
+          <div class="status-toast-alert status-toast-success" id="vipSuccessToast" style="width: 100%;">
+            <span>✦</span>
+            <span>VIP Invitation Confirmed! Use voucher code <strong>ARTIVIO2026</strong> for your $50 studio credit at
+              launch.</span>
+          </div>
+
+          <div
+            style="display: flex; gap: 1.25rem; justify-content: center; margin-top: 1.25rem; font-size: 0.78rem; color: var(--charcoal-soft);">
+            <span>🔒 Strict Privacy Guarantee</span>
+            <span>✦ Zero Spam Policy</span>
+            <span>✉️ Unsubscribe Anytime</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sneak Peek Preview Cards (3 Cards) -->
+      <div>
+        <div style="text-align: center; margin-bottom: 0.5rem;">
+          <span class="section-eyebrow">WHAT'S IN THE ATELIER</span>
+          <h2 style="font-size: clamp(1.6rem, 2.5vw, 2.1rem);">Sneak Peek: Atelier Innovations</h2>
+        </div>
+
+        <div class="sneak-peek-grid">
+          <!-- Card 1 -->
+          <div class="sneak-peek-card">
+            <span class="sneak-badge">Digital Innovation</span>
+            <div style="font-size: 2rem; margin-bottom: 0.65rem;">🪞</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">3D Real-Time Visualizer</h3>
+            <p style="font-size: 0.88rem; color: var(--charcoal-soft); line-height: 1.55;">
+              Upload personal photography or fine art from your phone. Preview 140+ moulding profiles, reveal depths,
+              and cotton mat margins scaled to your exact wall proportions.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="sneak-peek-card">
+            <span class="sneak-badge">Optical Science</span>
+            <div style="font-size: 2rem; margin-bottom: 0.65rem;">💎</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Diamond Anti-Reflective Glazing</h3>
+            <p style="font-size: 0.88rem; color: var(--charcoal-soft); line-height: 1.55;">
+              Next-generation 99.9% UV barrier glass with microscopic magnetron sputtering. Experience true
+              zero-reflection clarity as if there were no glass in front of your art.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="sneak-peek-card">
+            <span class="sneak-badge">Sustainable Forestry</span>
+            <div style="font-size: 2rem; margin-bottom: 0.65rem;">🌿</div>
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Certified Hardwood Profiles</h3>
+            <p style="font-size: 0.88rem; color: var(--charcoal-soft); line-height: 1.55;">
+              Sustainably milled Pennsylvania walnut, Appalachian white oak, and black cherry. Each moulding is treated
+              with organic beeswax and natural botanical sealants.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Exploration CTAs -->
+      <div style="margin-top: 3.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="gallery.html" class="btn btn-outline">
+          <span>Explore Current Gallery Portfolio</span>
+        </a>
+        <a href="blog.html" class="btn btn-outline">
+          <span>Read Conservation Guides</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary">
+          <span>Visit Studio Atelier</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Studio Footer -->
+  <footer class="footer" aria-label="Studio Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+            <div class="logo-icon">
+              <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="40" height="40">
+            </div>
+            <div class="brand-name">
+              <span class="brand-title">ARTIVIO</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Artivio is a museum-standard custom framing and art preservation atelier dedicated to conservation mounting,
+            genuine hardwood profiles, and archival framing craftsmanship.
+          </p>
+          <div class="footer-badges">
+            <span class="footer-badge">✦ Guild Commended Framer</span>
+            <span class="footer-badge">✦ ISO 18916 PAT Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Framing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-framing">Custom Picture Framing</a></li>
+            <li><a href="services.html#conservation">Museum Archival Glass (UV 99%)</a></li>
+            <li><a href="services.html#canvas">Canvas Stretcher & Floaters</a></li>
+            <li><a href="services.html#shadowboxes">Memorabilia Shadowboxes</a></li>
+            <li><a href="services.html#restoration">Gilded Frame Restoration</a></li>
+            <li><a href="services.html#materials">Hardwoods & Archival Mats</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Studio Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <span>482 Heritage Arts Way, Suite 100, Artisan District</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📞</span>
+              <span>(800) 555-FRAM / (800) 555-3726</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">✉️</span>
+              <span>curator@artivioframing.com</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <div class="footer-hours-row">
+              <span>Tuesday – Friday</span>
+              <span>10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Saturday</span>
+              <span>10:00 AM – 5:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Sunday – Monday</span>
+              <span>Closed (Private Appt Only)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> Artivio Custom Framing & Art Preservation Studio. All rights
+          reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="about.html">Privacy & Ethics Policy</a>
+          <a href="services.html">Conservation Guarantee</a>
+          <a href="404.html">404 Page</a>
+          <a href="maintenance.html">Maintenance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Live Active Countdown Timer
+    // Calculates a dynamic target date 28 days from today so it is always active
+    const now = new Date();
+    const targetDate = new Date(now.getTime() + (28 * 24 * 60 * 60 * 1000) + (14 * 60 * 60 * 1000) + (42 * 60 * 1000));
+
+    function updateCountdown() {
+      const current = new Date();
+      const diff = targetDate - current;
+
+      if (diff <= 0) {
+        document.getElementById('countdownDays').textContent = '00';
+        document.getElementById('countdownHours').textContent = '00';
+        document.getElementById('countdownMinutes').textContent = '00';
+        document.getElementById('countdownSeconds').textContent = '00';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('countdownDays').textContent = String(days).padStart(2, '0');
+      document.getElementById('countdownHours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('countdownMinutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('countdownSeconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // VIP Form Submission Handling
+    function handleVipSubmit() {
+      const emailInput = document.getElementById('vipEmail');
+      const toast = document.getElementById('vipSuccessToast');
+      if (emailInput && emailInput.value) {
+        toast.classList.add('show-toast');
+        emailInput.value = '';
+        setTimeout(() => {
+          toast.classList.remove('show-toast');
+        }, 8000);
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artivio | Custom Picture Framing & Art Preservation Studio</title>
+  <meta name="description"
+    content="Museum-quality custom picture framing, conservation glass, 100% cotton rag matting, and fine art preservation studio in the artisan district.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <script>
+    (function () {
+      var t = localStorage.getItem('artivio_theme') || localStorage.getItem('lartisan_theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var d = localStorage.getItem('artivio_direction') || localStorage.getItem('lartisan_direction');
+      if (d === 'rtl') document.documentElement.setAttribute('dir', 'rtl');
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Studio Notice">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>📍 482 Heritage Arts Way, Suite 100</span>
+        <span>🕒 Tue–Sat: 10:00 AM – 6:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <span>📞 <a href="tel:+18005553726">(800) 555-FRAM</a></span>
+        <span class="top-bar-gold">✦ Museum Conservation Standards Guaranteed</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-tool-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode"
+            title="Toggle Theme (Dark / Light)">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="header-tool-btn rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle Text Direction"
+            title="Toggle Direction (RTL / LTR)">
+            <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M16 4l4 4-4 4"></path>
+              <path d="M20 16H4M8 12l-4 4 4 4"></path>
+            </svg>
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <a href="contact.html#quote-form" class="btn btn-primary btn-sm header-quote-btn" id="headerQuoteBtn">Request
+            a Quote</a>
+          <button class="header-tool-btn mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="mobileDrawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="38" height="38">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+        <button class="drawer-close" aria-label="Close menu">&times;</button>
+      </div>
+
+      <div class="drawer-tools">
+        <button class="drawer-tool-btn theme-toggle-btn-mobile" type="button">
+          <span class="theme-label-mobile">🌙 Dark Mode</span>
+        </button>
+        <button class="drawer-tool-btn rtl-toggle-btn-mobile" type="button">
+          <span class="rtl-label-mobile">🌐 Switch to RTL</span>
+        </button>
+      </div>
+
+      <ul class="drawer-nav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="drawer-footer">
+      <a href="contact.html#quote-form" class="btn btn-primary" style="width: 100%;">Request a Quote</a>
+      <p style="font-size: 0.8rem; margin-top: 1rem; color: var(--charcoal-muted); text-align: center;">
+        Direct Inquiries: (800) 555-FRAM
+      </p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- SECTION 1: HERO INTRODUCTION WITH REQUEST A QUOTE BUTTON -->
+    <section class="hero" id="homeHero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-gold">✦ Bespoke Fine Art Framing & Archival Conservation</span>
+            </div>
+            <h1 class="hero-title">
+              Preserving Your Cherished Masterpieces With <span>Master Craftsmanship</span>
+            </h1>
+            <p class="hero-description">
+              From original fine art and precious heirlooms to contemporary canvases and historical documents, we blend
+              30 years of traditional joinery with museum-grade archival preservation to honor every piece.
+            </p>
+            <div class="hero-ctas">
+              <a href="contact.html#quote-form" class="btn btn-primary btn-lg" id="heroRequestQuoteBtn">
+                Request a Quote
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="gallery.html" class="btn btn-outline btn-lg" id="heroViewPortfolioBtn">Explore Gallery</a>
+            </div>
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <div class="trust-item-icon">🏛️</div>
+                <div class="trust-item-text">
+                  <strong>Museum Standards</strong>
+                  <span>99% UV Tru Vue®</span>
+                </div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-item-icon">🌿</div>
+                <div class="trust-item-text">
+                  <strong>100% Acid-Free</strong>
+                  <span>Cotton Rag Mats</span>
+                </div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-item-icon">🪵</div>
+                <div class="trust-item-text">
+                  <strong>Solid Hardwoods</strong>
+                  <span>Walnut & Oak</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-frame-composition">
+              <img src="assets/images/gilded_ornate_frame.jpg"
+                alt="Masterpiece oil painting in museum-quality hand-gilded custom frame" class="hero-main-img">
+              <div class="hero-floating-card">
+                <div style="font-size: 1.8rem; color: var(--burnt-orange);">📐</div>
+                <div>
+                  <strong style="font-size: 0.92rem; display: block; color: var(--charcoal-black);">Precision Miter
+                    Joints</strong>
+                  <span style="font-size: 0.78rem; color: var(--charcoal-muted);">Hand-planed and corner-splined</span>
+                </div>
+              </div>
+              <div class="hero-floating-badge">
+                <strong>30+</strong>
+                <span>Years of Excellence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FEATURED FRAMING STYLES -->
+    <section class="section section-bg-ivory" id="framingStyles">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Artisan Profiles</span>
+          <h2 class="section-title">Featured Framing Styles & Mouldings</h2>
+          <p class="section-desc">
+            Explore our curated selection of bespoke mouldings crafted from sustainable solid woods, hand-applied metal
+            leaf finishes, and minimalist gallery profiles.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <!-- Style 1 -->
+          <article class="style-card">
+            <div class="style-card-img-wrap">
+              <img src="assets/images/moulding_woodcraft_detail.jpg"
+                alt="Solid American Walnut and White Oak natural wood frame profiles" class="style-card-img">
+              <span class="style-card-tag">Natural Hardwood</span>
+            </div>
+            <div class="style-card-body">
+              <h3 class="style-card-title">American Walnut & White Oak</h3>
+              <p class="style-card-text">
+                FSC-certified native hardwoods with hand-rubbed Danish oil and satin wax finishes. Ideal for modern
+                minimalists, fine art prints, and watercolor landscapes.
+              </p>
+              <ul class="style-card-features">
+                <li>Dovetail corner splines for structural longevity</li>
+                <li>Zero chemical stain; natural grain character</li>
+                <li>Custom depth options from 0.75" to 2.5"</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline btn-sm">View Hardwood Specs</a>
+            </div>
+          </article>
+
+          <!-- Style 2 -->
+          <article class="style-card">
+            <div class="style-card-img-wrap">
+              <img src="assets/images/service_fine_art.jpg"
+                alt="Hand-gilded 22k gold leaf picture frame corner detail with baroque ornamentation"
+                class="style-card-img">
+              <span class="style-card-tag">Heritage Masterpiece</span>
+            </div>
+            <div class="style-card-body">
+              <h3 class="style-card-title">Hand-Gilded 22k Gold Leaf</h3>
+              <p class="style-card-text">
+                Traditional water-gilded frames burnished with genuine agate stones. Crafted using centuries-old
+                European bole methods for historical art, classical portraits, and ornate heirlooms.
+              </p>
+              <ul class="style-card-features">
+                <li>Authentic gold and palladium leaf applications</li>
+                <li>Hand-carved corner flourishes and ribbing</li>
+                <li>Custom antiqued patinas matching period artwork</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline btn-sm">Explore Gold Leaf</a>
+            </div>
+          </article>
+
+          <!-- Style 3 -->
+          <article class="style-card">
+            <div class="style-card-img-wrap">
+              <img src="assets/images/service_canvas_floater.jpg"
+                alt="Contemporary canvas floating frame with deep architectural shadowline reveal"
+                class="style-card-img">
+              <span class="style-card-tag">Contemporary Canvas</span>
+            </div>
+            <div class="style-card-body">
+              <h3 class="style-card-title">Architectural Floater Frames</h3>
+              <p class="style-card-text">
+                Designed specifically for stretched canvases and wood panels. Creates an elegant 0.25" shadow reveal
+                that lets the artwork appear suspended in mid-air.
+              </p>
+              <ul class="style-card-features">
+                <li>Protects delicate canvas edges from impact</li>
+                <li>Available in satin obsidian, bleached ash & brass</li>
+                <li>Deep channel support for 1.5" to 2.25" gallery bars</li>
+              </ul>
+              <a href="services.html" class="btn btn-outline btn-sm">View Floater Profiles</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CUSTOM FRAMING SERVICES (REDESIGNED: TIGHT, MODERN, HIGH-DENSITY WITH AUTHENTIC PHOTOS) -->
+    <section class="section" id="customServices">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">What We Do</span>
+          <h2 class="section-title">Comprehensive Custom Framing Services</h2>
+          <p class="section-desc">
+            Every piece brought into our studio receives a bespoke design consultation, precision timber machining, and
+            reversible mounting tailored to the artwork's specific medium.
+          </p>
+        </header>
+
+        <div class="grid-4">
+          <!-- Card 1 -->
+          <article class="service-card-modern">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service_fine_art.jpg"
+                alt="Original fine art and oil paintings custom framed with linen mat" class="service-card-img">
+              <span class="service-card-pill">Fine Art</span>
+            </div>
+            <div class="service-card-body">
+              <h4>Fine Art & Oil Paintings</h4>
+              <p>Bespoke matting with French line detailing, reversible mounting, and museum glass that lets every
+                brushstroke shine.</p>
+              <div class="service-specs-strip">
+                <span class="spec-chip">99% UV Museum Glass</span>
+                <span class="spec-chip">8-Ply Cotton Rag</span>
+                <span class="spec-chip">Reversible Mount</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card-modern">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service_canvas_floater.jpg"
+                alt="Canvas stretching and architectural floater frames in studio" class="service-card-img">
+              <span class="service-card-pill">Canvas Floaters</span>
+            </div>
+            <div class="service-card-body">
+              <h4>Canvas Stretching & Floaters</h4>
+              <p>Kiln-dried cross-braced stretcher bars and sleek contemporary floating mouldings with custom shadow
+                reveals.</p>
+              <div class="service-specs-strip">
+                <span class="spec-chip">Solid Black Walnut</span>
+                <span class="spec-chip">1/4" Air Reveal</span>
+                <span class="spec-chip">Mortise & Tenon</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card-modern">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service_shadowbox.jpg"
+                alt="Deep museum shadowbox preserving pocket watch, medal, and heirloom letter"
+                class="service-card-img">
+              <span class="service-card-pill">Heirloom 3D</span>
+            </div>
+            <div class="service-card-body">
+              <h4>Deep Object Shadowboxes</h4>
+              <p>Museum-sealed display cases for family heirlooms, military medals, sports jerseys, vintage textiles,
+                and sculpture.</p>
+              <div class="service-specs-strip">
+                <span class="spec-chip">Belgian Linen</span>
+                <span class="spec-chip">Zero Adhesive</span>
+                <span class="spec-chip">Hand-Stitched</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card-modern">
+            <div class="service-card-img-wrap">
+              <img src="assets/images/service_document.jpg"
+                alt="Historical certificate and diploma preserved in archival gold frame" class="service-card-img">
+              <span class="service-card-pill">Archival Paper</span>
+            </div>
+            <div class="service-card-body">
+              <h4>Certificates & Documents</h4>
+              <p>Archival encapsulation for diplomas, rare historical manuscripts, maps, and vintage botanical prints
+                with 100% de-acidification.</p>
+              <div class="service-specs-strip">
+                <span class="spec-chip">Mylar Encapsulation</span>
+                <span class="spec-chip">Zeolite Backing</span>
+                <span class="spec-chip">Seal Bevel Cuts</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="services.html" class="btn btn-primary" id="homeViewAllServicesBtn">
+            Explore All Services & Material Options
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CONSERVATION AND PRESERVATION -->
+    <section class="section section-bg-ivory" id="conservation">
+      <div class="container">
+        <div class="conservation-grid">
+          <div>
+            <span class="section-eyebrow">Archival Integrity</span>
+            <h2 class="section-title">Museum-Grade Conservation & Preservation</h2>
+            <p style="margin-bottom: 1.25rem;">
+              Ordinary framing materials release acidic gases and allow harmful ultraviolet rays to yellow paper and
+              fade pigments. At Artivio, every component is rigorously tested to museum conservation standards.
+            </p>
+
+            <div class="conservation-list">
+              <div class="conservation-item">
+                <div class="conservation-num">01</div>
+                <div class="conservation-text">
+                  <h4>Tru Vue® Museum Glass (99% UV Blocking)</h4>
+                  <p>Virtually invisible anti-reflective coating reduces glare to under 1% while filtering out 99% of
+                    damaging UV light wavelengths.</p>
+                </div>
+              </div>
+
+              <div class="conservation-item">
+                <div class="conservation-num">02</div>
+                <div class="conservation-text">
+                  <h4>100% Cotton Rag Matboards & Mounts</h4>
+                  <p>Naturally lignin-free and buffered with calcium carbonate to actively neutralize environmental
+                    atmospheric pollutants.</p>
+                </div>
+              </div>
+
+              <div class="conservation-item">
+                <div class="conservation-num">03</div>
+                <div class="conservation-text">
+                  <h4>Reversible Archival Hinging</h4>
+                  <p>We use Japanese mulberry paper and cooked wheat starch paste. Art is never taped or permanently
+                    glued—all mounting is 100% reversible.</p>
+                </div>
+              </div>
+
+              <div class="conservation-item">
+                <div class="conservation-num">04</div>
+                <div class="conservation-text">
+                  <h4>Hermetic Microclimate Dust Backing</h4>
+                  <p>Archival vapor barrier and acid-free moisture seals protect against humidity swings, insect
+                    intrusion, and ambient airborne dust.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="about.html#preservation-philosophy" class="btn btn-secondary conservation-cta-btn"
+              id="conservationStdBtn">Read Our Preservation Standards</a>
+          </div>
+
+          <div>
+            <div class="artisan-frame">
+              <div class="artisan-frame-inner">
+                <img src="assets/images/craftsman_bench.jpg"
+                  alt="Museum conservation framing demonstration with anti-reflective 99% UV glass"
+                  style="width: 100%; height: 440px; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FEATURED FRAMED ARTWORK -->
+    <section class="section" id="featuredArtwork">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Studio Showcase</span>
+          <h2 class="section-title">Featured Framed Artworks</h2>
+          <p class="section-desc">
+            A glimpse at recently completed custom framing projects entrusted to our workshop by private collectors,
+            institutions, and interior designers.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <div class="framed-card">
+            <img src="assets/images/service_canvas_floater.jpg"
+              alt="Original oil painting on linen mounted in custom dark walnut floater frame"
+              style="width: 100%; height: 240px; object-fit: cover; border-radius: 2px; margin-bottom: 1rem;">
+            <div class="badge-terracotta" style="margin-bottom: 0.65rem;">Gallery Highlight</div>
+            <h4>Ethereal Horizons (Oil on Linen)</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 0.85rem;">
+              Framed in a custom-milled 2" solid Black Walnut float frame with an ebonized interior reveal and museum
+              suspension brackets.
+            </p>
+            <div class="framed-card-specs">
+              Size: 36" × 48" • Conservation Floater Mount
+            </div>
+          </div>
+
+          <div class="framed-card">
+            <img src="assets/images/gallery_botanical_print.jpg"
+              alt="19th century botanical fine art print in 8-ply archival cotton rag mat"
+              style="width: 100%; height: 240px; object-fit: cover; border-radius: 2px; margin-bottom: 1rem;">
+            <div class="badge-gold" style="margin-bottom: 0.65rem;">Historical Conservation</div>
+            <h4>19th Century Botanical Lithograph</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 0.85rem;">
+              Enclosed in 8-ply Bainbridge pure cotton rag mat with hand-ruled French watercolor panels and Tru Vue®
+              Museum Glazing.
+            </p>
+            <div class="framed-card-specs">
+              Size: 18" × 24" • Gilded Bevel & French Lines
+            </div>
+          </div>
+
+          <div class="framed-card">
+            <img src="assets/images/service_shadowbox.jpg"
+              alt="Historic military medals and vintage ephemera preserved in deep archival shadowbox"
+              style="width: 100%; height: 240px; object-fit: cover; border-radius: 2px; margin-bottom: 1rem;">
+            <div class="badge-ivory" style="margin-bottom: 0.65rem;">Heirloom Shadowbox</div>
+            <h4>Naval Officer Medals & Ephemera</h4>
+            <p style="font-size: 0.92rem; margin-bottom: 0.85rem;">
+              Deep shadowbox lined with raw Belgian archival linen. Each medal individually anchored with conservation
+              thread—zero adhesive used.
+            </p>
+            <div class="framed-card-specs">
+              Size: 20" × 28" • Hand-stitched Preservation
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.25rem;">
+          <a href="gallery.html" class="btn btn-outline" id="homeViewGalleryBtn">View Full Gallery & Project
+            Lightbox</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PROFESSIONAL CRAFTSMANSHIP & WORKSHOP PROCESS (REDESIGNED WITH AUTHENTIC FRAMING PHOTO & STRUCTURED TILES) -->
+    <section class="section section-bg-ivory" id="craftsmanship">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">The Artisan Bench</span>
+          <h2 class="section-title">Master Craftsmanship In Every Miter</h2>
+          <p class="section-desc">
+            We reject mass-produced factory moldings and fast assembly. Every frame is hand-built in our dedicated
+            woodshop by guild-certified framers.
+          </p>
+        </header>
+
+        <div class="craftsmanship-grid">
+          <div class="craftsmanship-visual">
+            <div class="artisan-frame">
+              <img src="assets/images/craftsman_bench.jpg"
+                alt="Master picture framer assembling custom ornate gilded picture frame on woodworking bench with clamps and wood shavings"
+                style="width: 100%; height: 420px; object-fit: cover;">
+            </div>
+            <!-- Overlay stamp -->
+            <div
+              style="position: absolute; bottom: 15px; left: 15px; background: rgba(37, 32, 32, 0.9); color: #F8E9D2; padding: 0.6rem 1rem; border-radius: 4px; border: 1px solid var(--muted-gold); font-size: 0.82rem; font-family: var(--font-heading); display: flex; align-items: center; gap: 0.5rem;">
+              <span style="color: var(--muted-gold); font-size: 1.1rem;">★</span>
+              <span>Guild Certified Master Joinery</span>
+            </div>
+          </div>
+
+          <div>
+            <h3 style="margin-bottom: 0.75rem;">Four Decades of Guild-Level Joinery</h3>
+            <p style="margin-bottom: 1.25rem; font-size: 0.98rem;">
+              Our joinery techniques originate from traditional cabinetmaking. We hand-cut true 45-degree miters using
+              razor-sharp tungsten carbide blades and insert hardwood corner splines that prevent sagging, even on
+              six-foot canvases.
+            </p>
+
+            <div class="craftsmanship-badges">
+              <div class="craft-badge-item">
+                <div class="craft-badge-icon">🪚</div>
+                <div>
+                  <strong>Precision 45° Miters</strong>
+                  <span>Tungsten guillotine cuts</span>
+                </div>
+              </div>
+
+              <div class="craft-badge-item">
+                <div class="craft-badge-icon">🪵</div>
+                <div>
+                  <strong>Internal Walnut Splines</strong>
+                  <span>10× corner tensile strength</span>
+                </div>
+              </div>
+
+              <div class="craft-badge-item">
+                <div class="craft-badge-icon">📐</div>
+                <div>
+                  <strong>Micrometric Mat Bevels</strong>
+                  <span>Calibrated to 0.5mm accuracy</span>
+                </div>
+              </div>
+
+              <div class="craft-badge-item">
+                <div class="craft-badge-icon">✨</div>
+                <div>
+                  <strong>Hand-Rubbed Finishes</strong>
+                  <span>Natural beeswax and shellac</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.75rem;">
+              <a href="about.html" class="btn btn-primary" id="homeMeetArtisansBtn">Meet Our Master Framers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CUSTOMER TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow">Client Endorsements</span>
+          <h2 class="section-title">Trusted By Collectors, Galleries & Families</h2>
+          <p class="section-desc">
+            Read what art connoisseurs, gallery directors, and homeowners have to say about their framing experiences
+            with Artivio.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "Artivio framed an original 1920s gouache painting that had been in our family for three generations.
+              Their knowledge of cotton rag matting and UV museum glass was extraordinary. It looks vibrant and
+              protected for another century."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80"
+                alt="Eleanor Vance, Fine Art Collector" class="author-avatar">
+              <div class="author-info">
+                <h5>Eleanor Vance</h5>
+                <span>Fine Art Collector, Historic Boston</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "As a contemporary gallery director, our standards for canvas floaters and clean miters are unyielding.
+              Artivio has framed our past four solo exhibitions with absolute perfection and delivered on time every
+              single time."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+                alt="Marcus Sterling, Gallery Curator" class="author-avatar">
+              <div class="author-info">
+                <h5>Marcus Sterling</h5>
+                <span>Curator, Vanguard Contemporary</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-quote">
+              "The shadowbox they crafted for my grandfather’s WWII flight logs and medals brought tears to our eyes. No
+              glue was touched to the fabric—everything was hand-anchored with archival thread. Truly world-class
+              artisans."
+            </p>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
+                alt="Sophia Chen, Interior Consultant" class="author-avatar">
+              <div class="author-info">
+                <h5>Sophia Chen</h5>
+                <span>Interior Architectural Consultant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FINAL ENQUIRY CALL TO ACTION -->
+    <section class="section section-bg-ivory" id="finalCta">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="section-eyebrow">Start Your Project</span>
+          <h2>Ready to Protect & Showcase Your Artwork?</h2>
+          <p>
+            Whether you have a family vintage photograph, a large-scale original oil canvas, or a prized certificate,
+            bring your piece into our studio or request an initial estimate online.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="contact.html#quote-form" class="btn btn-primary btn-lg" id="ctaQuoteBtn">Request a Custom Quote</a>
+            <a href="contact.html#appointment" class="btn btn-outline btn-lg" id="ctaConsultBtn">Book Studio
+              Consultation</a>
+          </div>
+          <p style="margin-top: 1.25rem; font-size: 0.82rem; color: var(--charcoal-muted);">
+            No obligation • Complimentary profile matching & conservation assessment
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Artivio Home" style="margin-bottom: 1rem;">
+            <div class="logo-icon">
+              <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+            </div>
+            <div class="brand-name">
+              <span class="brand-title" style="color: #fff;">ARTIVIO</span>
+            </div>
+          </a>
+          <p>
+            Dedicated to the heritage craft of bespoke picture framing and museum conservation since 1994. Every piece
+            is handled with archival reversibility and master joinery.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-icon" aria-label="Instagram">📸</a>
+            <a href="https://pinterest.com" class="social-icon" aria-label="Pinterest">📌</a>
+            <a href="https://facebook.com" class="social-icon" aria-label="Facebook">📘</a>
+            <a href="https://linkedin.com" class="social-icon" aria-label="LinkedIn">💼</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Studio Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home-2.html">Home 2 (Artisan Showcase)</a></li>
+            <li><a href="about.html">About Us & Heritage</a></li>
+            <li><a href="services.html">Framing & Conservation</a></li>
+            <li><a href="gallery.html">Portfolio & Lightbox</a></li>
+            <li><a href="blog.html">Care & Framing Journal</a></li>
+            <li><a href="contact.html">Contact Us & Quote Form</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Framing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-framing">Custom Picture Framing</a></li>
+            <li><a href="services.html#conservation">Museum Archival Glass (UV 99%)</a></li>
+            <li><a href="services.html#canvas">Canvas Stretcher & Floaters</a></li>
+            <li><a href="services.html#shadowboxes">Memorabilia Shadowboxes</a></li>
+            <li><a href="services.html#restoration">Gilded Frame Restoration</a></li>
+            <li><a href="services.html#materials">Hardwoods & Archival Mats</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Studio Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <span>482 Heritage Arts Way, Suite 100, Artisan District</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📞</span>
+              <span>(800) 555-FRAM / (800) 555-3726</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">✉️</span>
+              <span>curator@artivioframing.com</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <div class="footer-hours-row">
+              <span>Tuesday – Friday</span>
+              <span>10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Saturday</span>
+              <span>10:00 AM – 5:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Sunday – Monday</span>
+              <span>Closed (Private Appt Only)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> Artivio Custom Framing & Art Preservation Studio. All rights
+          reserved.
+        </div>
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap;">
+          <a href="about.html">Privacy & Ethics Policy</a>
+          <a href="services.html">Conservation Guarantee</a>
+          <a href="404.html">404 Page</a>
+          <a href="maintenance.html">Maintenance</a>
+          <a href="coming-soon.html">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

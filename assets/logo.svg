@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="artivioGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3C363"/>
+      <stop offset="50%" stop-color="#E9AC43"/>
+      <stop offset="100%" stop-color="#C2841E"/>
+    </linearGradient>
+    <linearGradient id="artivioOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E56A32"/>
+      <stop offset="100%" stop-color="#C93624"/>
+    </linearGradient>
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Frame Shadow / Depth -->
+  <rect x="4" y="4" width="92" height="92" rx="10" fill="#252020" stroke="url(#artivioGold)" stroke-width="3"/>
+
+  <!-- Miter 45° Corner Joins (Classic Picture Framing Detail) -->
+  <line x1="4" y1="4" x2="18" y2="18" stroke="#E9AC43" stroke-width="1.75" stroke-linecap="round"/>
+  <line x1="96" y1="4" x2="82" y2="18" stroke="#E9AC43" stroke-width="1.75" stroke-linecap="round"/>
+  <line x1="4" y1="96" x2="18" y2="82" stroke="#E9AC43" stroke-width="1.75" stroke-linecap="round"/>
+  <line x1="96" y1="96" x2="82" y2="82" stroke="#E9AC43" stroke-width="1.75" stroke-linecap="round"/>
+
+  <!-- Corner Joinery Splines / Woodcraft Details -->
+  <circle cx="11" cy="11" r="1.5" fill="#E9AC43"/>
+  <circle cx="89" cy="11" r="1.5" fill="#E9AC43"/>
+  <circle cx="11" cy="89" r="1.5" fill="#E9AC43"/>
+  <circle cx="89" cy="89" r="1.5" fill="#E9AC43"/>
+
+  <!-- Inner Archival Mat Opening (Beveled Edge) -->
+  <rect x="18" y="18" width="64" height="64" rx="4" fill="#1C1818" stroke="#E7CBA7" stroke-width="1.5"/>
+  <!-- Bevel Fillet Line -->
+  <rect x="22" y="22" width="56" height="56" rx="2" fill="none" stroke="url(#artivioGold)" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- Master Gilder Spark / Archival Star at Apex -->
+  <path d="M 50 20 L 51.5 24.5 L 56 26 L 51.5 27.5 L 50 32 L 48.5 27.5 L 44 26 L 48.5 24.5 Z" fill="url(#artivioGold)"/>
+
+  <!-- Artivio Monogram 'A' with Integrated Framing Chevron -->
+  <!-- Left & Right Arch of 'A' -->
+  <path d="M 33 73 L 47.5 29 L 52.5 29 L 67 73 L 60.5 73 L 56.5 59 L 43.5 59 L 39.5 73 Z" fill="url(#artivioGold)" filter="url(#softGlow)"/>
+  
+  <!-- Inner Bevel Aperture -->
+  <polygon points="50,38 45.5,52.5 54.5,52.5" fill="#1C1818"/>
+  
+  <!-- Framing Crossbar Accent / Precision Bevel in Burnt Orange -->
+  <rect x="41.5" y="52.5" width="17" height="3.5" fill="url(#artivioOrange)" rx="1"/>
+
+  <!-- Pedestal Baseline Bar -->
+  <rect x="30" y="74.5" width="40" height="2" fill="url(#artivioGold)" rx="1" opacity="0.8"/>
+</svg>

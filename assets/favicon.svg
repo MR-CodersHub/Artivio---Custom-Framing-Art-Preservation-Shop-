@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5C76D"/>
+      <stop offset="50%" stop-color="#E9AC43"/>
+      <stop offset="100%" stop-color="#C2841E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Solid Obsidian Atelier Background -->
+  <rect width="64" height="64" rx="12" fill="#252020"/>
+
+  <!-- Gilded Mitered Frame Border -->
+  <rect x="5" y="5" width="54" height="54" rx="6" fill="none" stroke="url(#favGold)" stroke-width="2.5"/>
+
+  <!-- Miter 45° Corner Joints -->
+  <line x1="5" y1="5" x2="13" y2="13" stroke="#E9AC43" stroke-width="1.5"/>
+  <line x1="59" y1="5" x2="51" y2="13" stroke="#E9AC43" stroke-width="1.5"/>
+  <line x1="5" y1="59" x2="13" y2="51" stroke="#E9AC43" stroke-width="1.5"/>
+  <line x1="59" y1="59" x2="51" y2="51" stroke="#E9AC43" stroke-width="1.5"/>
+
+  <!-- Inner Mat Window Line -->
+  <rect x="13" y="13" width="38" height="38" rx="3" fill="#1C1818" stroke="#E7CBA7" stroke-width="1"/>
+
+  <!-- Artivio Monogram 'A' -->
+  <path d="M 20 48 L 30 18 L 34 18 L 44 48 L 39 48 L 36.5 39 L 27.5 39 L 25 48 Z" fill="url(#favGold)"/>
+  <!-- Inner A cutout -->
+  <polygon points="32,25 29,34 35,34" fill="#1C1818"/>
+  <!-- Burnt Orange Framing Crossbar -->
+  <rect x="26.5" y="34.5" width="11" height="3" fill="#D85A24" rx="0.5"/>
+
+  <!-- Apex Gold Dot Accent -->
+  <circle cx="32" cy="15" r="1.5" fill="#F5C76D"/>
+</svg>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Maintenance | Artivio Custom Picture Framing Studio</title>
+  <meta name="description" content="Artivio framing studio is currently undergoing scheduled workshop improvements and archival system upgrades. Contact us directly for urgent framing orders.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <script>
+    (function () {
+      var t = localStorage.getItem('artivio_theme') || localStorage.getItem('lartisan_theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var d = localStorage.getItem('artivio_direction') || localStorage.getItem('lartisan_direction');
+      if (d === 'rtl') document.documentElement.setAttribute('dir', 'rtl');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Studio Notice">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>📍 482 Heritage Arts Way, Suite 100</span>
+        <span>🕒 Showroom Walk-ins Welcome: Tue–Sat, 10 AM – 6 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <span>📞 <a href="tel:+18005553726">(800) 555-FRAM</a></span>
+        <span class="top-bar-gold">✦ Physical Studio Open During Online Maintenance</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-tool-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme (Dark / Light)">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="header-tool-btn rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle Text Direction" title="Toggle Direction (RTL / LTR)">
+            <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M16 4l4 4-4 4"></path>
+              <path d="M20 16H4M8 12l-4 4 4 4"></path>
+            </svg>
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <a href="tel:+18005553726" class="btn btn-primary btn-sm header-quote-btn" id="headerQuoteBtn">Call (800) 555-FRAM</a>
+          <button class="header-tool-btn mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="38" height="38">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+        <button class="drawer-close" aria-label="Close navigation menu">✕</button>
+      </div>
+
+      <div class="drawer-tools">
+        <button class="drawer-tool-btn drawer-theme-toggle" id="drawerThemeToggle">
+          <span class="drawer-tool-icon">🌙</span>
+          <span class="drawer-tool-label">Dark Theme</span>
+        </button>
+        <button class="drawer-tool-btn drawer-rtl-toggle" id="drawerRtlToggle">
+          <span class="drawer-tool-icon">🌐</span>
+          <span class="drawer-tool-label">RTL Layout</span>
+        </button>
+      </div>
+
+      <ul class="drawer-menu">
+        <li><a href="index.html" class="drawer-link">Home</a></li>
+        <li><a href="home-2.html" class="drawer-link">Home 2</a></li>
+        <li><a href="about.html" class="drawer-link">About Us</a></li>
+        <li><a href="services.html" class="drawer-link">Services</a></li>
+        <li><a href="gallery.html" class="drawer-link">Gallery</a></li>
+        <li><a href="blog.html" class="drawer-link">Blog</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact Us</a></li>
+      </ul>
+
+      <div class="drawer-cta">
+        <a href="tel:+18005553726" class="btn btn-primary" style="width: 100%; justify-content: center;">Call Studio Now</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Maintenance Main Content -->
+  <main class="status-page-main" id="mainContent">
+    <div class="container status-container">
+      
+      <div class="maintenance-hero-layout">
+        
+        <!-- Left Column: Notice, Status Board & Form -->
+        <div>
+          <!-- Live Badge -->
+          <div class="status-pill-badge">
+            <span class="status-dot-pulse dot-green"></span>
+            <span>Workshop Notice • Scheduled Atelier Upgrade</span>
+          </div>
+
+          <h1 style="font-size: clamp(2rem, 3.4vw, 2.75rem); line-height: 1.2; margin-bottom: 0.95rem;">
+            Sharpening the Miters & Tuning the Atelier
+          </h1>
+
+          <p style="font-size: 1.05rem; color: var(--charcoal-soft); line-height: 1.65; margin-bottom: 1.5rem;">
+            Our craftsman bench and digital catalog are currently undergoing scheduled maintenance. We are recalibrating our online pricing engine and adding newly acquired American walnut mouldings to our archive.
+          </p>
+
+          <!-- Progress Box -->
+          <div class="status-progress-box">
+            <div class="progress-label-row">
+              <span>✦ Database Re-indexing & Calibration</span>
+              <span id="progressPercent">82% Complete</span>
+            </div>
+            <div class="progress-track" aria-label="Maintenance progress bar">
+              <div class="progress-fill" id="progressFill" style="width: 82%;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-top: 0.65rem; font-size: 0.8rem; color: var(--charcoal-soft);">
+              <span>Started: Monday, 8:00 PM</span>
+              <span>Expected: Tuesday, 10:00 AM (EST)</span>
+            </div>
+          </div>
+
+          <!-- Service Status Board -->
+          <h3 style="font-size: 1.15rem; margin-top: 1.75rem; margin-bottom: 0.75rem;">
+            Live Studio Operational Status
+          </h3>
+
+          <div class="service-status-grid">
+            <div class="service-status-item">
+              <div>
+                <strong>Online Design Tool</strong>
+                <div style="font-size: 0.75rem; color: var(--charcoal-soft);">Database syncing</div>
+              </div>
+              <span class="service-status-pill pill-amber">● In Maintenance</span>
+            </div>
+
+            <div class="service-status-item">
+              <div>
+                <strong>Artisan Showroom</strong>
+                <div style="font-size: 0.75rem; color: var(--charcoal-soft);">482 Heritage Arts Way</div>
+              </div>
+              <span class="service-status-pill">● Open Tue–Sat</span>
+            </div>
+
+            <div class="service-status-item">
+              <div>
+                <strong>Phone & Orders</strong>
+                <div style="font-size: 0.75rem; color: var(--charcoal-soft);">(800) 555-FRAM</div>
+              </div>
+              <span class="service-status-pill">● Active</span>
+            </div>
+
+            <div class="service-status-item">
+              <div>
+                <strong>Artwork Climate Vault</strong>
+                <div style="font-size: 0.75rem; color: var(--charcoal-soft);">21°C / 50% RH Stable</div>
+              </div>
+              <span class="service-status-pill">● Protected 24/7</span>
+            </div>
+          </div>
+
+          <!-- "Notify Me When Doors Reopen" Form -->
+          <div style="margin-top: 1.75rem;">
+            <label for="notifyEmail" style="display: block; font-size: 0.88rem; font-weight: 700; margin-bottom: 0.45rem;">
+              Be First to Know When the Atelier is Fully Restored
+            </label>
+            <form class="status-notify-form" id="maintenanceNotifyForm" onsubmit="event.preventDefault(); handleNotifySubmit();">
+              <input 
+                type="email" 
+                class="status-notify-input" 
+                id="notifyEmail" 
+                placeholder="Enter your email address..." 
+                required
+                aria-label="Email address for maintenance notification"
+              >
+              <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+                <span>Notify Me →</span>
+              </button>
+            </form>
+
+            <div class="status-toast-alert status-toast-success" id="notifySuccessToast">
+              <span>✓</span>
+              <span>Thank you! We've recorded your email. You'll receive priority access as soon as our workshop tools are online.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Bench Frame & Direct Assistance -->
+        <div>
+          <div class="maintenance-visual-frame">
+            <img src="assets/images/craftsman_bench.jpg" alt="Artivio master framer workbench and precision joinery tools" width="600" height="380" loading="lazy">
+            <div class="maintenance-visual-badge">
+              <span style="font-size: 1.4rem;">🔨</span>
+              <div>
+                <strong>Master Framing Bench #04</strong>
+                <div style="font-size: 0.76rem; opacity: 0.85;">Conservation miter cutting and archival splines underway</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Assistance Card -->
+          <div class="status-nav-card" style="margin-top: 1.75rem; text-align: left; align-items: flex-start;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.65rem;">
+              <span style="font-size: 1.35rem;">📞</span>
+              <h4 style="margin: 0; font-size: 1.15rem;">Urgent Order or Client Inquiries?</h4>
+            </div>
+            <p style="font-size: 0.88rem; color: var(--charcoal-soft); line-height: 1.5; margin-bottom: 1rem;">
+              If you have artwork currently in progress or need immediate museum conservation advice, our master framers are reachable by phone and email without interruption.
+            </p>
+            <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+              <a href="tel:+18005553726" class="btn btn-primary btn-sm">
+                <span>Call (800) 555-FRAM</span>
+              </a>
+              <a href="mailto:curator@artivioframing.com" class="btn btn-outline btn-sm">
+                <span>Email Studio Curator</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Studio Footer -->
+  <footer class="footer" aria-label="Studio Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+            <div class="logo-icon">
+              <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="40" height="40">
+            </div>
+            <div class="brand-name">
+              <span class="brand-title">ARTIVIO</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Artivio is a museum-standard custom framing and art preservation atelier dedicated to conservation mounting, genuine hardwood profiles, and archival framing craftsmanship.
+          </p>
+          <div class="footer-badges">
+            <span class="footer-badge">✦ Guild Commended Framer</span>
+            <span class="footer-badge">✦ ISO 18916 PAT Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Framing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-framing">Custom Picture Framing</a></li>
+            <li><a href="services.html#conservation">Museum Archival Glass (UV 99%)</a></li>
+            <li><a href="services.html#canvas">Canvas Stretcher & Floaters</a></li>
+            <li><a href="services.html#shadowboxes">Memorabilia Shadowboxes</a></li>
+            <li><a href="services.html#restoration">Gilded Frame Restoration</a></li>
+            <li><a href="services.html#materials">Hardwoods & Archival Mats</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Studio Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <span>482 Heritage Arts Way, Suite 100, Artisan District</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📞</span>
+              <span>(800) 555-FRAM / (800) 555-3726</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">✉️</span>
+              <span>curator@artivioframing.com</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <div class="footer-hours-row">
+              <span>Tuesday – Friday</span>
+              <span>10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Saturday</span>
+              <span>10:00 AM – 5:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Sunday – Monday</span>
+              <span>Closed (Private Appt Only)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> Artivio Custom Framing & Art Preservation Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="about.html">Privacy & Ethics Policy</a>
+          <a href="services.html">Conservation Guarantee</a>
+          <a href="404.html">404 Page</a>
+          <a href="coming-soon.html">Collection 2026</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleNotifySubmit() {
+      const emailInput = document.getElementById('notifyEmail');
+      const toast = document.getElementById('notifySuccessToast');
+      if (emailInput && emailInput.value) {
+        toast.classList.add('show-toast');
+        emailInput.value = '';
+        setTimeout(() => {
+          toast.classList.remove('show-toast');
+        }, 6000);
+      }
+    }
+  </script>
+</body>
+</html>

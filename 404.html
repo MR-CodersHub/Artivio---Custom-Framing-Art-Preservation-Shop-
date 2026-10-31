@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404: Canvas Not Found | Artivio Custom Picture Framing & Art Preservation</title>
+  <meta name="description" content="The framing project or page you requested could not be located. Explore our custom framing portfolio, preservation guides, or return to Artivio atelier.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <script>
+    (function () {
+      var t = localStorage.getItem('artivio_theme') || localStorage.getItem('lartisan_theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      var d = localStorage.getItem('artivio_direction') || localStorage.getItem('lartisan_direction');
+      if (d === 'rtl') document.documentElement.setAttribute('dir', 'rtl');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Studio Notice">
+    <div class="container">
+      <div class="top-bar-left">
+        <span>📍 482 Heritage Arts Way, Suite 100</span>
+        <span>🕒 Tue–Sat: 10:00 AM – 6:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <span>📞 <a href="tel:+18005553726">(800) 555-FRAM</a></span>
+        <span class="top-bar-gold">✦ All Works Handcrafted in our Artisan Studio</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="44" height="44">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="home-2.html" class="nav-link">Home 2</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="header-tool-btn theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme (Dark / Light)">
+            <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+            <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <button class="header-tool-btn rtl-toggle-btn" id="rtlToggleBtn" aria-label="Toggle Text Direction" title="Toggle Direction (RTL / LTR)">
+            <svg class="rtl-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 8h16M16 4l4 4-4 4"></path>
+              <path d="M20 16H4M8 12l-4 4 4 4"></path>
+            </svg>
+            <span class="rtl-toggle-text">RTL</span>
+          </button>
+          <a href="contact.html#quote-form" class="btn btn-primary btn-sm header-quote-btn" id="headerQuoteBtn">Request a Quote</a>
+          <button class="header-tool-btn mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+          <div class="logo-icon">
+            <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="38" height="38">
+          </div>
+          <div class="brand-name">
+            <span class="brand-title">ARTIVIO</span>
+          </div>
+        </a>
+        <button class="drawer-close" aria-label="Close navigation menu">✕</button>
+      </div>
+
+      <div class="drawer-tools">
+        <button class="drawer-tool-btn drawer-theme-toggle" id="drawerThemeToggle">
+          <span class="drawer-tool-icon">🌙</span>
+          <span class="drawer-tool-label">Dark Theme</span>
+        </button>
+        <button class="drawer-tool-btn drawer-rtl-toggle" id="drawerRtlToggle">
+          <span class="drawer-tool-icon">🌐</span>
+          <span class="drawer-tool-label">RTL Layout</span>
+        </button>
+      </div>
+
+      <ul class="drawer-menu">
+        <li><a href="index.html" class="drawer-link">Home</a></li>
+        <li><a href="home-2.html" class="drawer-link">Home 2</a></li>
+        <li><a href="about.html" class="drawer-link">About Us</a></li>
+        <li><a href="services.html" class="drawer-link">Services</a></li>
+        <li><a href="gallery.html" class="drawer-link">Gallery</a></li>
+        <li><a href="blog.html" class="drawer-link">Blog</a></li>
+        <li><a href="contact.html" class="drawer-link">Contact Us</a></li>
+      </ul>
+
+      <div class="drawer-cta">
+        <a href="contact.html#quote-form" class="btn btn-primary" style="width: 100%; justify-content: center;">Start Custom Project</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 404 Main Section -->
+  <main class="status-page-main" id="mainContent">
+    <div class="container status-container" style="text-align: center;">
+
+      <!-- Status Badge -->
+      <div>
+        <div class="status-pill-badge">
+          <span class="status-dot-pulse"></span>
+          <span>Archival Notice • Error 404</span>
+        </div>
+      </div>
+
+      <!-- Empty Museum Frame Visual -->
+      <div class="empty-frame-wrap">
+        <div class="empty-museum-frame">
+          <div class="frame-corner-spline spline-tl"></div>
+          <div class="frame-corner-spline spline-tr"></div>
+          <div class="frame-corner-spline spline-bl"></div>
+          <div class="frame-corner-spline spline-br"></div>
+          
+          <div class="frame-mat-window">
+            <div class="frame-aperture-cutout">
+              <span class="frame-error-code">404</span>
+              <span class="frame-error-caption">Aperture Empty • Canvas Not Found</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Headline & Description -->
+      <h1 style="font-size: clamp(1.85rem, 3.2vw, 2.6rem); margin-bottom: 0.85rem;">
+        The Frame is Ready, But the Canvas Has Moved
+      </h1>
+      <p style="max-width: 620px; margin: 0 auto 1.75rem; font-size: 1.05rem; color: var(--charcoal-soft); line-height: 1.65;">
+        The archival document, commission catalog, or page you were looking for may have been archived, rehung under a different accession number, or temporarily relocated in our atelier.
+      </p>
+
+      <!-- Instant Live Search Bar -->
+      <div class="status-search-card">
+        <form class="status-search-form" id="errorSearchForm" onsubmit="event.preventDefault(); handleStatusSearch();">
+          <svg class="status-search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            class="status-search-input" 
+            id="errorSearchInput" 
+            placeholder="Search framing services, glass, floater frames, blog guides..." 
+            autocomplete="off"
+            aria-label="Search Artivio framing website"
+          >
+          <button type="submit" class="status-search-btn-submit">
+            <span>Find</span>
+            <span>→</span>
+          </button>
+        </form>
+
+        <!-- Dropdown Suggestions (Filtered Live) -->
+        <div class="status-search-dropdown" id="searchDropdown">
+          <a href="services.html#conservation" class="status-search-item" data-keywords="glass museum uv 99 protection conservation">
+            <span>💎</span>
+            <div>
+              <strong>Museum Archival Glass (UV 99%)</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Services • Optical clarity & conservation reflection control</div>
+            </div>
+          </a>
+          <a href="services.html#canvas" class="status-search-item" data-keywords="canvas floater frames reveal shadow stretchers">
+            <span>🖼️</span>
+            <div>
+              <strong>Canvas Floater Frames & Reveals</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Services • 3/8" architectural reveals for deep canvases</div>
+            </div>
+          </a>
+          <a href="gallery.html" class="status-search-item" data-keywords="gallery portfolio completed commissions photography art">
+            <span>🏛️</span>
+            <div>
+              <strong>Completed Framing Portfolio</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Gallery • 9+ curated commissions with joinery inspection</div>
+            </div>
+          </a>
+          <a href="blog-hardwood-miter-splines.html" class="status-search-item" data-keywords="hardwood miter splines walnut cherry joinery">
+            <span>🪵</span>
+            <div>
+              <strong>Hardwood Miter Splines & Joinery</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Blog Guide • Why splines outlast mechanical v-nails</div>
+            </div>
+          </a>
+          <a href="blog-cotton-rag-vs-alpha-cellulose.html" class="status-search-item" data-keywords="mat board cotton rag alpha-cellulose acid-free lignin">
+            <span>📜</span>
+            <div>
+              <strong>100% Cotton Rag vs Alpha-Cellulose Mats</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Blog Guide • Museum preservation standards & pH buffering</div>
+            </div>
+          </a>
+          <a href="index.html#estimator" class="status-search-item" data-keywords="estimator pricing cost quote calculator frame dimensions">
+            <span>📐</span>
+            <div>
+              <strong>Live Frame Cost Estimator</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Tools • Calculate price estimates based on exact dimensions</div>
+            </div>
+          </a>
+          <a href="contact.html#quote-form" class="status-search-item" data-keywords="quote consultation appointment contact book studio">
+            <span>✉️</span>
+            <div>
+              <strong>Book an Atelier Consultation</strong>
+              <div style="font-size: 0.78rem; color: var(--charcoal-soft);">Contact • Schedule a private 1-on-1 meeting with master framers</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
+        <a href="index.html" class="btn btn-primary">
+          <span>← Return to Atelier Home</span>
+        </a>
+        <a href="gallery.html" class="btn btn-outline">
+          <span>Explore Completed Gallery</span>
+        </a>
+        <a href="contact.html" class="btn btn-outline" style="border-style: dashed;">
+          <span>Report Missing Page</span>
+        </a>
+      </div>
+
+      <!-- Quick Helpful Links Grid (4 Cards) -->
+      <div class="status-cards-grid">
+        <a href="gallery.html" class="status-nav-card">
+          <div class="status-card-icon">🏛️</div>
+          <h3 class="status-card-title">Curated Gallery</h3>
+          <p class="status-card-desc">Inspect completed fine art floaters, archival photography, and historic maps.</p>
+          <span class="status-card-link-text">Browse Works →</span>
+        </a>
+
+        <a href="services.html" class="status-nav-card">
+          <div class="status-card-icon">📐</div>
+          <h3 class="status-card-title">Framing Services</h3>
+          <p class="status-card-desc">Discover our museum glazing, 100% cotton rag matting, and shadowboxes.</p>
+          <span class="status-card-link-text">View Services →</span>
+        </a>
+
+        <a href="blog.html" class="status-nav-card">
+          <div class="status-card-icon">📖</div>
+          <h3 class="status-card-title">Preservation Guides</h3>
+          <p class="status-card-desc">Learn about 99% UV glass, 24K water gilding, and gallery wall spacing.</p>
+          <span class="status-card-link-text">Read Articles →</span>
+        </a>
+
+        <a href="contact.html" class="status-nav-card">
+          <div class="status-card-icon">📍</div>
+          <h3 class="status-card-title">Visit Workshop</h3>
+          <p class="status-card-desc">Visit our atelier at 482 Heritage Arts Way or request a custom quote online.</p>
+          <span class="status-card-link-text">Get in Touch →</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Studio Footer -->
+  <footer class="footer" aria-label="Studio Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="Artivio Home">
+            <div class="logo-icon">
+              <img src="assets/logo.svg" alt="Artivio Custom Framing Logo" width="40" height="40">
+            </div>
+            <div class="brand-name">
+              <span class="brand-title">ARTIVIO</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Artivio is a museum-standard custom framing and art preservation atelier dedicated to conservation mounting, genuine hardwood profiles, and archival framing craftsmanship.
+          </p>
+          <div class="footer-badges">
+            <span class="footer-badge">✦ Guild Commended Framer</span>
+            <span class="footer-badge">✦ ISO 18916 PAT Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <h4>Framing Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#custom-framing">Custom Picture Framing</a></li>
+            <li><a href="services.html#conservation">Museum Archival Glass (UV 99%)</a></li>
+            <li><a href="services.html#canvas">Canvas Stretcher & Floaters</a></li>
+            <li><a href="services.html#shadowboxes">Memorabilia Shadowboxes</a></li>
+            <li><a href="services.html#restoration">Gilded Frame Restoration</a></li>
+            <li><a href="services.html#materials">Hardwoods & Archival Mats</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Studio Information</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">📍</span>
+              <span>482 Heritage Arts Way, Suite 100, Artisan District</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">📞</span>
+              <span>(800) 555-FRAM / (800) 555-3726</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon">✉️</span>
+              <span>curator@artivioframing.com</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <div class="footer-hours-row">
+              <span>Tuesday – Friday</span>
+              <span>10:00 AM – 6:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Saturday</span>
+              <span>10:00 AM – 5:00 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span>Sunday – Monday</span>
+              <span>Closed (Private Appt Only)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span class="current-year">2026</span> Artivio Custom Framing & Art Preservation Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="about.html">Privacy & Ethics Policy</a>
+          <a href="services.html">Conservation Guarantee</a>
+          <a href="maintenance.html">Studio Status</a>
+          <a href="coming-soon.html">Collection 2026</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Live Instant Search Filter
+    const searchInput = document.getElementById('errorSearchInput');
+    const dropdown = document.getElementById('searchDropdown');
+    const searchItems = dropdown.querySelectorAll('.status-search-item');
+
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        const val = this.value.trim().toLowerCase();
+        if (val.length === 0) {
+          dropdown.style.display = 'none';
+          return;
+        }
+
+        let visibleCount = 0;
+        searchItems.forEach(item => {
+          const text = (item.textContent + ' ' + (item.getAttribute('data-keywords') || '')).toLowerCase();
+          if (text.includes(val)) {
+            item.style.display = 'flex';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        dropdown.style.display = visibleCount > 0 ? 'block' : 'none';
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', function (e) {
+        if (!searchInput.contains(e.target) && !dropdown.contains(e.target)) {
+          dropdown.style.display = 'none';
+        }
+      });
+
+      searchInput.addEventListener('focus', function () {
+        if (this.value.trim().length > 0) {
+          dropdown.style.display = 'block';
+        }
+      });
+    }
+
+    function handleStatusSearch() {
+      const firstVisible = Array.from(searchItems).find(i => i.style.display !== 'none');
+      if (firstVisible) {
+        window.location.href = firstVisible.getAttribute('href');
+      } else {
+        window.location.href = 'services.html';
+      }
+    }
+  </script>
+</body>
+</html>
